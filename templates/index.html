@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Customer Payment Delay Prediction</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Customer Payment Delay Prediction
+        </div>
+
+        <form action="/" method="post">
+
+            <div class="inputfield">
+                <label>Invoice Amount:</label>
+                <input type="text" name="invoice_amount" required><br><br>
+
+                <label>Past Avg Delay Days:</label>
+                <input type="text" name="past_avg_delay_days" required><br><br>
+
+                <label>Total Invoices:</label>
+                <input type="text" name="total_invoices" required><br><br>
+
+                <label>Past Late Ratio:</label>
+                <input type="text" name="past_late_ratio" required><br><br>
+
+                <button type="submit" class="btn">Predict</button>
+            </div>
+
+        </form>
+
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
