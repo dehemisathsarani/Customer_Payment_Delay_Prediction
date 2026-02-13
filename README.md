@@ -2,16 +2,17 @@ Customer Payment Delay Prediction (Finance / AR Module)
 
 
 Business Problem
--Predict whether an invoice will be paid late, on time, or early.
+- Predict whether an invoice will be paid late, on time, or early.
 
  
 Data Set Description - ERP Data
--       Invoice date
--       Payment terms
--       Customer history
--       Amount
--       Country / region
--       Past delay patterns
+
+- Invoice date
+- Payment terms
+- Customer history
+- Amount
+- Country / region
+- Past delay patterns
 
 
 Data Science Tasks
